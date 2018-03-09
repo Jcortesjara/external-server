@@ -122,6 +122,6 @@ app.get('/getStockUnits', function (req, res) {
     console.log('GET external-inventory respond: ' + JSON.stringify(respond));
 });
 
-app.listen(3000, function () {
-    console.log('External connection app listening on port 3000! with jenkins!!');
+app.listen(80, function () {
+    console.log('External connection app listening on port 80! with jenkins!!');
 });
