@@ -7,9 +7,9 @@ const qt = 2;
 
 app.use(bodyParser.json());
 
-app.use(basicAuth({
+/* app.use(basicAuth({
     users: { 'jose': 'rube' }
-}));
+})); */
 
 app.post('/notifyOrder', function (req, res) {
     console.log(req.body);
@@ -123,5 +123,5 @@ app.get('/getStockUnits', function (req, res) {
 });
 
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000! with jenkins!!');
+    console.log('External connection app listening on port 3000! with jenkins!!');
 });
